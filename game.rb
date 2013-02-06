@@ -1,25 +1,31 @@
 require_relative 'board'
 require_relative 'node'
 
-# Start with the 0 peg being open
-board = Board.new(0)
+[0, 10, 14, 1, 2, 6, 11, 13, 9, 4, 7, 8, 3, 5, 12].each do |peg|
 
-def play(board)
-  if board.moves.any?
-    board.moves.each do |move|
-      board.move(move[0], move[1], move[2])
-      play(board)
-      board.rewind(move[0], move[1], move[2])
+  # Start with the 0 peg being open
+  board = Board.new(peg)
+
+  def play(board)
+    if board.moves.any?
+      count = 0
+      board.moves.each do |move|
+        board.move(move[0], move[1], move[2])
+        count += play(board)
+        board.rewind(move[0], move[1], move[2])
+      end
+      count
+    else
+      if board.remaining == 1
+        1
+      else
+        0
+      end
     end
-  else
-    if board.remaining == 1
-      puts "## begin solution ##"
-      puts board.history
-      puts "## end solution ##"
-    end
+
   end
 
-end
+  puts "#{play(board)} solutions for opening peg: #{peg}"
 
-play(board)
+end
 
