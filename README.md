@@ -1,7 +1,7 @@
 triangle puzzle
 ===============
 
-This is an awful brute-force solution to the triangle-puzzle thing where
+This is an awful brute-force solution to the [triangle-puzzle](http://www.officeplayground.com/Assets/ProductPreview/pi3000-3199/3174_peggame_1.jpg) thing where
 you have pegs that jump other pegs. 
 
 It shouldn't be used by anyone for any reason.
