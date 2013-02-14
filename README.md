@@ -1,4 +1,4 @@
-triangle puzzle
+triangle puzzle, C++ edition
 ===============
 
 This is an awful brute-force solution to the [triangle-puzzle](http://www.officeplayground.com/Assets/ProductPreview/pi3000-3199/3174_peggame_1.jpg) thing where
@@ -10,7 +10,7 @@ This code shouldn't be looked at by anyone for any reason.
 
 If you must, though:
 
-    ruby game.rb
+    g++ -Wall -I . main.cpp board.cpp node.cpp -o main
 
 The board is set up with nodes like this:
 
@@ -47,18 +47,18 @@ Line 1 means "move peg 3 to peg 0 over peg 1"
 curiosity satisfied
 ===================
 
-    There are 29760 solutions when the 0 peg is open first
-    There are 29760 solutions when the 10 peg is open first
-    There are 29760 solutions when the 14 peg is open first
-    There are 14880 solutions when the 1 peg is open first
-    There are 14880 solutions when the 2 peg is open first
-    There are 14880 solutions when the 6 peg is open first
-    There are 14880 solutions when the 11 peg is open first
-    There are 14880 solutions when the 13 peg is open first
-    There are 14880 solutions when the 9 peg is open first
-    There are 1550 solutions when the 4 peg is open first
-    There are 1550 solutions when the 7 peg is open first
-    There are 1550 solutions when the 8 peg is open first
-    There are 85258 solutions when the 3 peg is open first
-    There are 85258 solutions when the 5 peg is open first
-    There are 85258 solutions when the 12 peg is open first
+    There are 29760 solutions when the 0 peg is open first (took 2.99158 seconds.)
+    There are 29760 solutions when the 10 peg is open first (took 3.05413 seconds.)
+    There are 29760 solutions when the 14 peg is open first (took 3.03566 seconds.)
+    There are 14880 solutions when the 1 peg is open first (took 1.57392 seconds.)
+    There are 14880 solutions when the 2 peg is open first (took 1.56325 seconds.)
+    There are 14880 solutions when the 6 peg is open first (took 1.55677 seconds.)
+    There are 14880 solutions when the 11 peg is open first (took 1.56967 seconds.)
+    There are 14880 solutions when the 13 peg is open first (took 1.57275 seconds.)
+    There are 14880 solutions when the 9 peg is open first (took 1.57545 seconds.)
+    There are 1550 solutions when the 4 peg is open first (took 0.768335 seconds.)
+    There are 1550 solutions when the 7 peg is open first (took 0.770984 seconds.)
+    There are 1550 solutions when the 8 peg is open first (took 0.770542 seconds.)
+    There are 85258 solutions when the 3 peg is open first (took 6.06795 seconds.)
+    There are 85258 solutions when the 5 peg is open first (took 6.06844 seconds.)
+    There are 85258 solutions when the 12 peg is open first (took 6.07781 seconds.)
