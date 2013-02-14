@@ -1,4 +1,4 @@
-triangle puzzle
+triangle puzzle, solution counting edition
 ===============
 
 This is an awful brute-force solution to the [triangle-puzzle](http://www.officeplayground.com/Assets/ProductPreview/pi3000-3199/3174_peggame_1.jpg) thing where
