@@ -11,6 +11,7 @@ This code shouldn't be looked at by anyone for any reason.
 If you must, though:
 
     g++ -Wall -I . main.cpp board.cpp node.cpp -o main
+    ./main
 
 The board is set up with nodes like this:
 
